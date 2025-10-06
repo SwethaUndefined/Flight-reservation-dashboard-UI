@@ -15,26 +15,22 @@ const Header = () => {
       align="middle"
       style={{ padding: "16px 0" }}
     >
-      <Col span={2}></Col>
+      <Col span={1}></Col>
 
-      <Col span={3}>
-        <Row align="middle" gutter={16}>
-          <Col>
-            <div className="plane-square">
-              <Plane className="plane-icon" />
-            </div>
-          </Col>
-          <Col>
-            <Space direction="vertical" size={0}>
-              <Typography className="header-text header-text-gradient">
-                SkyWings
-              </Typography>
-              <Typography className="header-subtitle-gradient">
-                Fly with confidence
-              </Typography>
-            </Space>
-          </Col>
-        </Row>
+      <Col span={4}>
+        <Space align="start" size={16}>
+          <div className="plane-square">
+            <Plane className="plane-icon" />
+          </div>
+          <Space direction="vertical" size={0}>
+            <Typography className="header-text header-text-gradient">
+              SkyWings
+            </Typography>
+            <Typography className="header-subtitle-gradient">
+              Fly with confidence
+            </Typography>
+          </Space>
+        </Space>
       </Col>
 
       <Col span={14}>
@@ -74,7 +70,9 @@ const Header = () => {
       </Col>
       <Col span={4}>
         <Space>
-       <Avatar size="large" className="avatar">SR</Avatar>
+          <Avatar size="large" className="avatar">
+            SR
+          </Avatar>
           <Typography className="card-sub">Swetha Ragunathan</Typography>
         </Space>
       </Col>

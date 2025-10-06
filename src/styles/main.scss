@@ -16,7 +16,7 @@
 .header-text {
     color: $primary-color;
     font-weight: $font-weight-semibold;
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
 }
 
 .header-text-gradient {
@@ -31,25 +31,27 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    font-size: $font-size-md;
+    font-size: $font-size-sm;
     font-weight: $font-weight-medium;
 }
 
 .booking-search-background {
     background: linear-gradient(90deg,
-            #f2f7ff,#f3f7ff,#eff5ff,#f6f9ff,#fdfeff,#ffffff,#fffdfc,#fef6ec,#fef5eb,#fffaf4,#fffcf7);
+            #f2f7ff, #f3f7ff, #eff5ff, #f6f9ff, #fdfeff, #ffffff, #fffdfc, #fef6ec, #fef5eb, #fffaf4, #fffcf7);
     padding: 40px 20px;
 }
 
 .plane-square {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: #4272f1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    margin-top: 5px;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.1);
@@ -57,8 +59,8 @@
 }
 
 .plane-icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     color: #fff;
     transform: rotate(-45deg);
 }
@@ -176,7 +178,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $font-size-xxxl;
+    font-size: $font-size-xxl;
     font-weight: 700;
     color: $text-color;
     margin-top: 50px;
@@ -186,7 +188,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $font-size-xxl;
+    font-size: $font-size-lg !important;
     font-weight: $font-weight-medium;
     color: $tertiary-color-light;
     line-height: 1;
@@ -220,7 +222,7 @@
 }
 
 .card-title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: $font-weight-regular;
     color: #4B5563;
     margin-top: 10px;
@@ -228,7 +230,7 @@
 
 .card-sub {
     color: #4b555f;
-    font-size: $font-size-lg;
+    font-size: $font-size-md;
     font-weight: $font-weight-regular;
 }
 
@@ -249,38 +251,48 @@
     justify-content: center;
     padding: 100px 20px;
     text-align: center;
-    min-height: 300px; 
+    min-height: 300px;
 }
-.footer p, .footer span {
+
+.footer p,
+.footer span {
     margin: 8px 0;
 }
-.ant-input{
-    font-size: 20px !important;
+
+.ant-input {
+    font-size: 18px !important;
 }
-.ant-picker-input>input{
-    font-size: 20px !important;
+
+.ant-picker-input>input {
+    font-size: 18px !important;
 }
-.ant-select-selection-placeholder{
-    font-size: 20px !important;
+
+.ant-select-selection-placeholder {
+    font-size: 18px !important;
 }
-.ant-select-selector{
+
+.ant-select-selector {
     height: 45px !important;
 }
-.ant-select-suffix{
-    font-size: 20px !important;
+
+.ant-select-suffix {
+    font-size: 18px !important;
 }
-.nav-icon{
-  color: $text-color-light;
-  font-size: 20px;
-}
-.header-nav-items{
+
+.nav-icon {
     color: $text-color-light;
-    font-size: $font-size-lg;
+    font-size: 20px;
+}
+
+.header-nav-items {
+    color: $text-color-light;
+    font-size: $font-size-md;
     font-weight: $font-weight-medium;
 }
-.avatar{
-    background: linear-gradient(90deg,#5b7df8,#6976f8,#6c75f8,#8369f8,#9264f9,#9563f9,#a866f9);
+
+.avatar {
+    background: linear-gradient(90deg, #5b7df8, #6976f8, #6c75f8, #8369f8, #9264f9, #9563f9, #a866f9);
     color: #fff;
-    font-size: $font-size-md;
+    font-size: $font-size-sm;
     font-weight: $font-weight-medium;
 }
