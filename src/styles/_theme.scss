@@ -1,0 +1,126 @@
+// ==============================
+// SkyBook SCSS Theme
+// ==============================
+
+// ------------------------------
+// Primary / Gradient Colors
+// ------------------------------
+$primary-color: #4272f1;          // main blue
+$primary-color-light: #6a8cf5;    // lighter blue
+$primary-color-dark: #2d50b5;     // darker blue
+
+$gradient-primary: linear-gradient(to right, #4272f1, #6b5dfc);
+$gradient-primary-hover: linear-gradient(to right, #365dd0, #5946c0);
+
+// ------------------------------
+// Secondary / Accent Colors
+// ------------------------------
+$secondary-color: #9b5de5;       // purple accent
+$secondary-color-light: #b785f3;
+$secondary-color-dark: #6f32b5;
+
+$tertiary-color: #f1a742;        // yellow/orange accent
+$tertiary-color-light: #f5c07a;
+$tertiary-color-dark: #b5732d;
+
+// ------------------------------
+// Background / Surface
+// ------------------------------
+$background-light: #feffff;
+$background-dark: #1e1e2f;
+$surface-light: #ffffff;
+$surface-dark: #2c2c3a;
+
+// ------------------------------
+// Text Colors
+// ------------------------------
+$text-color: #333333;             // main text
+$text-color-light: #777777;       // secondary text
+$text-color-inverse: #ffffff;     // on dark background
+$text-primary: $primary-color;    // headings/buttons
+$text-secondary: $secondary-color;
+
+// ------------------------------
+// Font Sizes
+// ------------------------------
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;   // body
+$font-size-lg: 20px;   // subheading
+$font-size-xl: 24px;   // heading
+$font-size-xxl: 32px;  // large heading
+$font-size-xxxl: 40px; // hero
+
+// ------------------------------
+// Font Weights
+// ------------------------------
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// ------------------------------
+// Spacing
+// ------------------------------
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+// ------------------------------
+// Buttons Example
+// ------------------------------
+.button-primary {
+  background: $gradient-primary;
+  color: $text-color-inverse;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 8px;
+//   transition: background 0.3s ease;
+
+  &:hover {
+    background: $gradient-primary-hover;
+  }
+}
+
+.button-secondary {
+  background-color: $secondary-color;
+  color: $text-color-inverse;
+  font-weight: $font-weight-medium;
+
+  &:hover {
+    background-color: $secondary-color-dark;
+  }
+}
+
+// ------------------------------
+// Cards Example
+// ------------------------------
+.card {
+  background-color: $surface-light;
+  color: $text-color;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  padding: $spacing-md;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+// ------------------------------
+// Headings
+// ------------------------------
+.text-heading {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $text-primary;
+}
+
+.text-subheading {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  color: $text-secondary;
+}
