@@ -8,7 +8,7 @@ const Footer = () => {
         Ready for Your Next Adventure?
       </Typography>
       <Typography.Text style={{ fontSize: '25px', color: '#fff',lineHeight: '1' }}>
-        Join thousands of happy travelers who trust SkyBook
+        Join thousands of happy travelers who trust SkyWings
       </Typography.Text>
     </div>
   );
